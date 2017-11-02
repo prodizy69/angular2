@@ -1,8 +1,8 @@
 {
-  "name": "business-app",
+  "name": "gms-app",
   "version": "1.0.0",
-  "author": "XXX YYYY",
-  "description": "Business App",
+  "author": "Sateesh Dubasi",
+  "description": "GMS App",
   "engines": {
     "node": ">=4.0",
     "npm": "~3.0.0"

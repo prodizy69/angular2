@@ -14,9 +14,9 @@ gulp.task('default', ['css','serve-dev']);
 gulp.tas
 // The input SCSS files and the SCSS output path
 var scssInput = [
-	'src/business/styles/app.scss'
+	'src/gms/styles/app.scss'
 	];
-var scssOutput = 'src/business/styles';
+var scssOutput = 'src/gms/styles';
 
 
 

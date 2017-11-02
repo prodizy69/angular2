@@ -12,8 +12,8 @@
 
         // paths
         paths: {
-            'business/*': 'src/business/tmp/*',
-            'business/test/*': 'src/business/tmp/test/*'
+            'gms/*': 'src/gms/tmp/*',
+            'gms/test/*': 'src/gms/tmp/test/*'
         },
 
         // map tells the System loader where to look for things
@@ -40,7 +40,7 @@
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
-            'src/business/'                                      : { defaultExtension: 'js', defaultJSExtensions: true },
+            'src/gms/'                                      : { defaultExtension: 'js', defaultJSExtensions: true },
            
             // thirdparty barrels
             'rxjs'                                          : { defaultExtension: 'js', defaultJSExtensions: true },

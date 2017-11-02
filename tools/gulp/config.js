@@ -1,6 +1,6 @@
 var envConfig = require('./utils/env');
 
-var appName = 'business';
+var appName = 'gms';
 
 module.exports = function () {
   var root = '',
@@ -14,7 +14,7 @@ module.exports = function () {
       e2e = test + 'e2e/',
       tmpE2E = tmpTest + 'e2e/',
       index = src + 'index.html',
-      dest ='dist/business/'
+      dest ='dist/gms/'
       assets = {
         config: app + 'config/',
         images: app + 'images/',
