@@ -1,0 +1,26 @@
+<main mdl class="mdl-layout verticalTabs">
+    <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--2-col bg-white">
+                <tabs-component></tabs-component>
+            </div>
+            <div class="mdl-cell mdl-cell--10-col">
+                <div class="mdl-tabs__panel" id="businessDetail">
+                    Business Details
+                </div>
+                <deal-landing *ngIf = "showLanding"></deal-landing>
+                <deal-creation *ngIf = "!showLanding"></deal-creation>
+                <div class="mdl-tabs__panel" id="branch">
+                    Branch
+                </div>
+             
+                <div class="mdl-tabs__panel" id="returns">
+                    Returns
+                </div>
+                <div class="mdl-tabs__panel" id="reports">
+                    Reports
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

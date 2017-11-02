@@ -1,0 +1,7 @@
+node_modules/**
+dist/**
+debug**
+src/tmp/**
+report/**
+.vscode/**
+npm-debug*

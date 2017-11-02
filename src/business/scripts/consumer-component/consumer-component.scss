@@ -1,0 +1,241 @@
+@import "../../styles/material/variables";
+/*tab content started*/
+/*tab menu area*/
+.verticalTabs {
+  .vertical-mdl-tabs {
+    margin-top: 0px;
+
+  }
+
+  .vertical-mdl-tabs.mdl-tabs.is-upgraded {
+    .mdl-tabs__tab.is-active:after {
+      content: inherit;
+      height: 0;
+    }
+    .mdl-tabs__panel.is-active {
+      padding: 30px;
+    }
+  }
+}
+.bg-white {
+  background: $white;
+}
+.consumer-right-content-area {
+  background: #ebf2f6;
+  .mdl-layout__header {
+    padding: 0 !important;
+    min-height: 20px;
+    box-shadow: none;
+  }
+  .mdl-layout__container {
+    position: relative;
+  }
+  .mdl-layout__tab-bar-container {
+    height: 35px;
+    overflow: visible;
+  }
+  .mdl-layout__tab-bar-left-button, .mdl-layout__tab-bar-right-button {
+    display: none;
+  }
+  .mdl-layout__tab-bar {
+    background: #999;
+    padding: 0;
+    overflow: visible;
+    height: 35px;
+    width: 100%;
+  }
+  .mdl-layout__tab {
+    height: 35px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    border-right: 1px solid #777777;
+    &:last-child {
+      border: none;
+    }
+  }
+  .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+    color: rgb(255, 255, 255);
+    background: #56b93b;
+    overflow: visible;
+    &::after {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #56b93b;
+      animation: inherit;
+      transition: inherit;
+      bottom: -8px;
+      background: none;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .bankDetails-wrap {
+  background: #f8fcfd;
+  overflow: hidden;
+  .mdl-data-table {
+    width: 100%;
+  }
+  .search-area {
+    .search input[type=text] {
+      width: 250px;
+      box-sizing: border-box;
+      border: 1px solid #cad1da;
+      border-radius: 4px;
+      font-size: 13px;
+      background-color: white;
+      background-image: url(business/images/search.png);
+      background-position: 5px center;
+      background-repeat: no-repeat;
+      padding: 0px 20px 0px 30px;
+      float: right;
+      line-height: 30px;
+      font-weight: 300;
+      margin-top: 15px;
+    }
+    button.addbtn {
+      float: right;
+      background: #4278ad;
+      height: 32px;
+      width: 100px;
+      border-radius: 2px;
+      margin-right: 10px;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 15px;
+      i {
+        font-size: 12px;
+        right: -9%;
+        left: auto;
+        top: 50%;
+        position: absolute;
+      }
+    }
+    .bankdetails-select {
+      float: left;
+      width: auto;
+    }
+  }
+  .bankdetails-datatable .mdl-data-table th {
+  position: relative;
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  height: 48px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  background: #56728e;
+  color: #fff;
+}
+}
+.mdl-textfield {
+    width: 100%;
+  }
+}
+
+
+
+/* Consumer Related Tab Starts Here */
+
+.verifyConsumerTab, .mdl-data-table {
+         border: 0px !important;
+         width: 100%;
+
+    td:first-of-type {
+        padding-left: 15px !important;
+    }
+    th, td {
+        text-align: left !important;
+    }
+    img {
+        float: left;
+    }   
+    .supportingText {
+        float: left;
+        margin-left: 15px;
+        p {
+        font-size: 16px;
+        color: #013a71;
+        margin-bottom: 0px;
+    }
+    span {
+        font-size: 12px;
+        color: #666666;
+    }
+    .mdl-button-group{
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: $white;
+    margin-top: 5px;
+  button{
+    display: inline-block;
+    margin-right: -4px;
+    box-shadow: none;
+    border-radius: 0px;
+    border-right: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    background: none;
+    color: #013a71;
+    &:last-child {
+        border-right: 0px;
+        margin-right: 0px;
+    }
+  }
+  
+  button:hover {
+  color: #013a71;
+  background: none;
+  }
+   
+}
+    }
+.mdl-button--accent.mdl-button--accent.mdl-button--raised {
+    background: #30b228;
+    }
+}
+
+.confirmYourDeal {
+    .mdl-dialog {
+        width: 40%;
+        .mdl-dialog__content {
+            border: 2px dotted #ccc;
+            padding: 30px;
+            .confirmClose {
+                width: auto !important;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                background: $white;
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 26px;
+                margin: 0px;
+            }
+            span {
+                color: #30b228;
+            }
+            .mdl-textfield {
+                width: 100%;
+            }
+            .terms {
+                width: 80%;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .mdl-button {
+                width: 100%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,28 @@
+
+.signInPopup {
+    .mdl-dialog {
+        width: 480px;
+        .mdl-dialog__title {
+            padding: 10px 0 0 10px;
+        }
+        .mdl-dialog__content {
+            padding: 0px;
+            .mdl-card__supporting-text {
+                width: 94%;
+                .mdl-textfield {
+                    width: 480px;
+                }
+                .mdl-button {
+                    width: 100%;
+                }
+                p {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    padding-top: 10px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

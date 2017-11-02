@@ -1,0 +1,385 @@
+<main mdl class="mdl-layout verticalTabs">
+  <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-grid mdl-grid--no-spacing">
+      <div class="mdl-cell mdl-cell--2-col bg-white">
+        <tabs-component></tabs-component>
+        </div>
+      <div class="mdl-cell mdl-cell--10-col">
+        <div class="mdl-tabs__panel" id="businessDetail">
+          Business Details
+        </div>
+        <div class="mdl-tabs__panel" id="branch">
+          Branch
+        </div>
+        <div class="mdl-tabs__panel" id="deal">
+          Deal
+        </div>
+        <div class="mdl-tabs__panel" id="consumerRelated">
+          Consumer Related
+        </div>
+        <div class="mdl-tabs__panel is-active" id="returns">
+          <div class="returns-content-area">
+            <div class="mdl-layout mdl-js-layout">
+              <div class="mdl-layout__header">
+
+                <!-- Tabs -->
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                  <a href="#returns" class="mdl-layout__tab is-active">Returns</a>
+                  <a href="#replacement" class="mdl-layout__tab">Replacement</a>
+                </div>
+              </div>
+              <!-- Tabs content -->
+              <main class="mdl-layout__content">
+                <!--Verify consumer content started-->
+                <section class="mdl-layout__tab-panel is-active" id="returns">
+                  <div class="page-content bankDetails-wrap">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--12-col search-area">
+
+                        <form class="contact-details-edit-form bankdetails-select">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                            <input class="mdl-textfield__input" type="text" id="add-mailing-select" value="10" readonly tabIndex="-1">
+                            <label for="add-mailing-select" class="mdl-textfield__label">Show</label>
+                            <ul for="add-mailing-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item">15</li>
+                              <li class="mdl-menu__item">20</li>
+                              <li class="mdl-menu__item">25</li>
+                            </ul>
+                          </div>
+                        </form>
+                        <form class="search">
+                          <input type="text" name="search" placeholder="Search..">
+                        </form>
+                      </div>
+                      <!-- table content started-->
+                      <div class="mdl-cell mdl-cell--12-col bankdetails-datatable returnsTab">
+                        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th class="mdl-data-table__cell--non-numeric">Deal Info</th>
+                              <th>Courier Name</th>
+                              <th>Consumer Email</th>
+                              <th>Tracking Id</th>
+                              <th>Request Raised On</th>
+                              <th>Return Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!--Returns content end-->
+
+                <!-- Replacement Tab Content-->
+                <section class="mdl-layout__tab-panel" id="replacement">
+                  <div class="page-content bankDetails-wrap">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell mdl-cell--12-col search-area">
+
+                        <form class="contact-details-edit-form bankdetails-select">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                            <input class="mdl-textfield__input" type="text" id="add-mailing-select" value="10" readonly tabIndex="-1">
+                            <label for="add-mailing-select" class="mdl-textfield__label">Show</label>
+                            <ul for="add-mailing-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item">15</li>
+                              <li class="mdl-menu__item">20</li>
+                              <li class="mdl-menu__item">25</li>
+                            </ul>
+                          </div>
+                        </form>
+
+
+                        <form class="search">
+                          <input type="text" name="search" placeholder="Search..">
+                        </form>
+                      </div>
+                      <!-- table content started-->
+                      <div class="mdl-cell mdl-cell--12-col bankdetails-datatable returnsTab">
+                        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th class="mdl-data-table__cell--non-numeric">Deal Info</th>
+                              <th>Courier Name</th>
+                              <th>Consumer Email</th>
+                              <th>Tracking Id</th>
+                              <th>Request Raised On</th>
+                              <th>Return Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric"><i class="material-icons">add</i></td>
+                              <td>
+                                USPS
+                              </td>
+                              <td>
+                                gzealb4@gmail.com
+                              </td>
+                              <td>
+                                1003005
+                              </td>
+                              <td>Thu Dec 22 11:44:30 PST 2016</td>
+                              <td>
+                                RETURN_COMPLETED
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </main>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-tabs__panel" id="reports">
+          Reports
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,100 @@
+@import "../../styles/material/variables";
+@import "../../styles/material/mixins";
+.mdl-layout__content {
+        width: 100%;
+}
+.banner {
+        background: url('business/images/banner.jpg') no-repeat top center;
+        height: 430px;
+        padding: 85px 0 0 0;
+        .mdl-layout-title {
+            color: #ffffff;
+            margin: 0px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .mdl-list {
+            .mdl-list__item {
+                color: #ffffff;
+                padding: 0px;
+                figure {
+                    -webkit-margin-before: 0;
+                    -webkit-margin-after: 0;
+                    -webkit-margin-start: 0px;
+                    -webkit-margin-end: 20px;
+                    margin-right: 20px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        .createNewBusiness {
+            .mdl-card {
+                width: 100%;
+                @include border-radius(10px);
+            }
+            .mdl-card__title {
+                padding-bottom: 0px;
+            }
+            .mdl-card__supporting-text {
+                width: 92%;
+                .mdl-textfield {
+                    width: 100%;
+                }
+                .mdl-checkbox {
+                    margin-bottom: 12px;
+                    .mdl-checkbox__label {
+                        font-size: 12px;
+                    }
+                }
+                .mdl-button {
+                    width: 100%;
+                }
+            }
+        }
+        .intro-section {
+            max-width: 1060px;
+        }
+    }
+.howItWorks {
+    background: url('business/images/pattern1.png') repeat;
+    text-align: center;
+    h1 {
+        color: green;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .howItWorksCallout {
+        img {
+            width: 100%;
+        }
+    }
+}
+.mobileApps {
+    background: url('business/images/pattern1.png') repeat;
+    .intro-section {
+        max-width: 960px;
+        figure {
+            margin-bottom: 0px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .mdl-grid {
+        padding-bottom: 0px;
+        padding-top: 80px;
+        .mdl-cell {
+            margin-bottom: 0px;
+            .apps {
+                .appStore {
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+        figure {
+            -webkit-margin-after: 0em;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.mdl-layout__content {
+	background: #fff !important;
+	.aboutUs {
+	margin: 0 20px;
+	h1 {
+		font-size: 42px;
+		text-align: center;
+	}
+	h4 {
+		font-size: 22px;
+		text-align: center;
+	}
+	.aboutCallout {
+		width: 20%;
+    	float: left;
+    	.aboutbg {
+    		background: #fafafa;
+    		text-align: center;
+    		padding: 10px;
+    		margin-right: 10px;
+   			min-height: 145px;
+   			.title {
+   				font-size: 18px;
+    			color: #214263;
+    			margin: 0;
+    			p {
+    				margin: 0;
+    			}
+   			}
+    	}
+	}
+	}
+}

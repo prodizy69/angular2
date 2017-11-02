@@ -1,0 +1,9 @@
+{
+  "features": [{
+    "inputFile": "app.module.js",
+    "outputFile": "app.component.js"
+  }],
+  "jsExtras": [
+    "feature-modules.js"
+  ]
+}
