@@ -9,13 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
 var platform_browser_1 = require('@angular/platform-browser');
+var common_1 = require('@angular/common');
 var mdl_directive_1 = require('./directives/mdl-directive');
 var app_service_1 = require('./services/app.service');
 var app_routes_1 = require('./app.routes');
-var app_component_1 = require('./app.component');
+var profile_component_1 = require('./profile-component/profile-component');
 var home_component_1 = require('./home-component/home-component');
+var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,6 +26,7 @@ var AppModule = (function () {
                 app_routes_1.AppRoutingModule],
             declarations: [app_component_1.AppComponent, mdl_directive_1.MDLDirective,
                 home_component_1.HomeComponent,
+                profile_component_1.ProfileComponent
             ],
             bootstrap: [app_component_1.AppComponent],
             providers: [app_service_1.AppService, { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }]

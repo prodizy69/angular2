@@ -8,26 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var router_1 = require('@angular/router');
 var core_1 = require('@angular/core');
-var HomeComponent = (function () {
-    function HomeComponent(route) {
-        this.route = route;
+var ProfileComponent = (function () {
+    function ProfileComponent() {
     }
-    HomeComponent.prototype.navigateTo = function (data) {
-        var dataParams = [data];
-        this.route.navigate(dataParams);
+    ProfileComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent = __decorate([
+    ProfileComponent = __decorate([
         core_1.Component({
-            selector: 'home-comp',
-            templateUrl: 'gms/scripts/home-component/home-component.html',
-            styleUrls: ['gms/scripts/home-component/home-component.css']
+            selector: 'profile-comp',
+            templateUrl: 'gms/scripts/profile-component/profile-component.html',
+            styleUrls: ['gms/scripts/profile-component/profile-component.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], HomeComponent);
-    return HomeComponent;
+        __metadata('design:paramtypes', [])
+    ], ProfileComponent);
+    return ProfileComponent;
 }());
-exports.HomeComponent = HomeComponent;
+exports.ProfileComponent = ProfileComponent;
 
-//# sourceMappingURL=home-component.js.map
+//# sourceMappingURL=profile-component.js.map

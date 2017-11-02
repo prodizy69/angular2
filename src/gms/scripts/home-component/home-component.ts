@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['gms/scripts/home-component/home-component.css']
 })
 export class HomeComponent {
+  constructor(private route: Router) { }
+
+  navigateTo(data) {
+    let dataParams = [data];
+    this.route.navigate(dataParams);
+  }
 
 }

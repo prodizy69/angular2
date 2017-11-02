@@ -94,7 +94,7 @@ gulp.task('bundle-features', function(done) {
 });
 
 gulp.task('build-assets', function (done) {
-  runSequence('sass', 'fonts', 'index', function () {
+  runSequence( 'fonts', 'index', function () {
     gulp.src(config.assets.config + '**/*.json', { base: config.assets.config })
         .pipe(gulp.dest(config.build.config));
     

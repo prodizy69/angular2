@@ -10,8 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var profile_component_1 = require('./profile-component/profile-component');
 var home_component_1 = require('./home-component/home-component');
-var routes = [{ path: '', redirectTo: 'gms', pathMatch: 'full' }, { path: 'gms', component: home_component_1.HomeComponent, data: { footer: true } }
+var routes = [{ path: '', redirectTo: 'gms', pathMatch: 'full' },
+    { path: 'gms', component: home_component_1.HomeComponent },
+    { path: 'gms/profile', component: profile_component_1.ProfileComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

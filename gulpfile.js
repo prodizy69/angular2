@@ -11,7 +11,6 @@ dashboard.show();
 
 gulp.task('default', ['css','serve-dev']);
 
-gulp.tas
 // The input SCSS files and the SCSS output path
 var scssInput = [
 	'src/gms/styles/app.scss'

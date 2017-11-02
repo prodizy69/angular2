@@ -12,7 +12,7 @@ if (envConfig.ENV === envConfig.ENVS.DEV) {
     bsIns.reload();
   }
 
-  gulp.task('serve-dev', ['sass', 'tsc', 'watch-ts', 'watch-sass'], function () {
+  gulp.task('serve-dev', [ 'tsc', 'watch-ts'], function () {
      startBrowsersync(config.browserSync.dev);
   });
 
