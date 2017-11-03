@@ -14,6 +14,8 @@ var common_1 = require('@angular/common');
 var mdl_directive_1 = require('./directives/mdl-directive');
 var app_service_1 = require('./services/app.service');
 var app_routes_1 = require('./app.routes');
+var footer_component_1 = require('./footer-component/footer-component');
+var header_component_1 = require('./header-component/header-component');
 var profile_component_1 = require('./profile-component/profile-component');
 var home_component_1 = require('./home-component/home-component');
 var app_component_1 = require('./app.component');
@@ -26,7 +28,9 @@ var AppModule = (function () {
                 app_routes_1.AppRoutingModule],
             declarations: [app_component_1.AppComponent, mdl_directive_1.MDLDirective,
                 home_component_1.HomeComponent,
-                profile_component_1.ProfileComponent
+                profile_component_1.ProfileComponent,
+                header_component_1.HeaderComponent,
+                footer_component_1.FooterComponent
             ],
             bootstrap: [app_component_1.AppComponent],
             providers: [app_service_1.AppService, { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }]
