@@ -1,7 +1,9 @@
-<div class="page">
-  <header-comp></header-comp>
-  <div class="container">
+<div class="containerFluid gmsApplication">
+  <header-comp *ngIf="headerDisplay"></header-comp>
+  <!-- Content Area Dom Started Here -->
+  <div class="containerFluid gmsContentArea">
     <router-outlet></router-outlet>
   </div>
-  <footer-comp></footer-comp>
+  <!-- Content Area Dom Ends Here -->
+  <footer-comp *ngIf="footerDisplay"></footer-comp>
 </div>

@@ -1,33 +1,203 @@
+/* Default Styles */
+* {
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    outline: none;
+    text-shadow: none;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.eot') format('eot'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.eot') format('eot'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
 body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+body{
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
     background: #ffffff;
 }
-.page{
-    width:100%;
-    margin:0px;
-    padding:0px 0px;
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.containerFluid {
+    width: 100%;
+    float: left;
+}
+
+a {
+    color: #4389ed;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ff9800;
+}
+
+img {
     max-width: 100%;
-    box-sizing: border-box;
 }
-.header{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    height: 80px;
-    border: 1px solid #f5f5f5;
+
+.clear {
+    clear: both;
 }
-.container{
-    width: 100%;
-    padding : 0px;
-    margin: 0px;
-    height: 480px;
-    border: 1px solid #f5f5f5;
-    overflow-y: scroll;
-    background: none;
+
+.noBorder {
+    border: 0px !important;
 }
-.footer {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    height: 50px;
-    border: 1px solid #f5f5f5;
+
+.numCol {
+    width: 50px;
 }
+
+.defaultBtn {
+    padding: 16px 37px;
+    display: inline-block;
+    background: #006df7;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'OpenSans-Bold';
+    margin-top: 20px;
+    text-align: center;
+}
+.defaultPadding {
+    padding: 0px 15px;
+}
+
+/* Content area Started Here */
+.gmsContentArea {
+    min-height: 746px;
+}
+.contentPart {
+}
+
+
+
+/* Left Side Content Styles started Here */
+.leftSideConetnt {
+    width: 250px;
+    border-right: 1px solid #e6e6e6;
+    background: #fbfbfb;
+    text-transform: capitalize;
+    float: left;
+}
+.mainTitle {
+    height: 42px;
+    background: #ff9800;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.sideLinkHeader span {
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    background: url(../images/downArrow.svg) no-repeat 225px center;
+    background-size: 14px;
+}
+
+.sideLinkHeader span.active {
+    background: url(../images/upArrow.svg) no-repeat 225px center;
+    background-size: 14px;
+}
+.sideLinkHeader span:hover {
+    background-color: #fff7ea;
+}
+.sidebarLinks {
+    background: #e6e6e6;
+    display: none;
+}
+.sidebarLinks.active {
+    display: block;
+}
+
+.sidebarLinks li {
+    padding-left: 25px;
+    min-height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 12px;
+}
+.sidebarLinks li:hover {
+    background: #ddd;
+}
+/* Left Side Content Styles Ends Here */
+
+/* Right Side content Started Here */
+.rightsideContent {
+    width: calc(100% - 250px);
+    float: left;
+    padding: 15px;
+}
+.mainData {
+    border: 1px solid #e6e6e6;
+    min-height: 746px;
+}
+.textBox, 
+.select {
+    width: 215px;
+    height: 35px;
+    border-radius: 0px;
+    outline: 0px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 13px;
+    display: block;
+    padding: 0px 5px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.textBox:focus,
+.select:focus {
+    border-color: rgba(67, 137, 237, 0.55);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+/* Right Side content Ends Here */
+
+/* Content area Ends Here */
+
+
+

@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var home_component_1 = require('./home-component/home-component');
+var login_component_1 = require('./login-component/login-component');
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var profile_component_1 = require('./profile-component/profile-component');
-var home_component_1 = require('./home-component/home-component');
 var routes = [{ path: '', redirectTo: 'gms', pathMatch: 'full' },
-    { path: 'gms', component: home_component_1.HomeComponent },
-    { path: 'gms/profile', component: profile_component_1.ProfileComponent }
+    { path: 'gms', component: login_component_1.LoginComponent, data: { footer: false, header: false } },
+    { path: 'gms/home', component: home_component_1.HomeComponent, data: { footer: true, header: true } }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

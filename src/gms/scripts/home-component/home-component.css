@@ -1,5 +1,15 @@
-.home {
-   width: 100%;
-   
-    background: none;
+
+/* User Greetings Part started Here */
+.userGreetings {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+    font-size: 20px;
 }
+.userName span {
+    font-weight: bold;
+    color: #ff9800;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+/* User Greetings Part Ends Here */

@@ -18,6 +18,7 @@ var AppComponent = (function () {
         this.route = route;
         this.activatedRoute = activatedRoute;
         this.footerDisplay = false;
+        this.headerDisplay = false;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -34,6 +35,7 @@ var AppComponent = (function () {
             .mergeMap(function (route) { return route.data; })
             .subscribe(function (event) {
             _this.footerDisplay = event.footer;
+            _this.headerDisplay = event.header;
         });
     };
     AppComponent = __decorate([

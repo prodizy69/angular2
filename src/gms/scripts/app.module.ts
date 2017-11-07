@@ -1,3 +1,5 @@
+import { LoginComponent } from './login-component/login-component';
+import { HttpService } from './services/http-service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -11,20 +13,25 @@ import { FooterComponent } from './footer-component/footer-component';
 import { HeaderComponent } from './header-component/header-component';
 import { ProfileComponent } from './profile-component/profile-component';
 import { HomeComponent } from './home-component/home-component';
+import { HttpModule } from '@angular/http';
+import { CommonModule } from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [BrowserModule,
-        AppRoutingModule],
+        AppRoutingModule,
+        HttpModule, CommonModule],
     declarations: [AppComponent, MDLDirective,
         HomeComponent,
         ProfileComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        LoginComponent
     ],
     bootstrap: [AppComponent],
-    providers: [AppService, { provide: LocationStrategy, useClass: HashLocationStrategy }]
+    providers: [AppService, HttpService, { provide: LocationStrategy, useClass: HashLocationStrategy }]
 })
 export class AppModule {
 

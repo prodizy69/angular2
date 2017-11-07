@@ -1,3 +1,166 @@
-.header {
-    
+
+/* Header Styles Started Here */
+.loginHeader {
+    height: 35px;
+    background: #4389ed;
+    color: #fff;
 }
+.logedInLabels a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.logedInLabels a.home {
+    background: url(gms/images/home.svg) no-repeat center center;
+    background-size: 20px;
+}
+.logedInLabels a.home:hover {
+    background: url(gms/images/home-active.svg) no-repeat center center;
+    background-size: 20px;
+}
+.logedInLabels a.contact {
+    background: url(gms/images/contact.svg) no-repeat center center;
+    background-size: 20px;
+}
+.logedInLabels a.contact:hover {
+    background: url(gms/images/contact-active.svg) no-repeat center center;
+    background-size: 20px;
+}
+.logedInLabels a.logout {
+    background: url(gms/images/logout.svg) no-repeat center center;
+    background-size: 20px;
+}
+.logedInLabels a.logout:hover {
+    background: url(gms/images/logout-active.svg) no-repeat center center;
+    background-size: 20px;
+}
+.loggedInUser {
+    margin-right: 100px;
+    line-height: 35px;
+}
+.loggedInUser span {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 12px;
+}
+/*Main Header Styles */
+.mainHeader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fbfbfb;
+}
+.logo {
+    display: inline-block;
+    width: 216px;
+    height: 56px;
+    background: url(gms/images/logo.svg) no-repeat center center;
+    margin-top: 6px;
+}
+.mainMenu li {
+    min-width: 85px;
+    height: 68px;
+    float: left;
+    margin-left: 22px;
+    text-align: center;
+
+}
+.mainMenu li.gameConfig {
+    background: url(gms/images/settings.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.gameConfig:hover,
+.mainMenu li.gameConfig.active {
+    background: url(gms/images/settings-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.players {
+    background: url(gms/images/players.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.players:hover,
+.mainMenu li.players.active {
+    background: url(gms/images/players-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.support {
+    background: url(gms/images/support.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.support:hover,
+.mainMenu li.support.active {
+    background: url(gms/images/support-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.casheir {
+    background: url(gms/images/cashier.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.casheir:hover,
+.mainMenu li.casheir.active {
+    background: url(gms/images/cashier-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.intelligence {
+    background: url(gms/images/intelligence.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.intelligence:hover,
+.mainMenu li.intelligence.active {
+    background: url(gms/images/intelligence-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.administration {
+    background: url(gms/images/administration.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.administration:hover,
+.mainMenu li.administration.active {
+    background: url(gms/images/administration-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.administration:hover,
+.mainMenu li.administration.active {
+    background: url(gms/images/administration-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.dashboard {
+    background: url(gms/images/dashboard.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li.dashboard:hover,
+.mainMenu li.dashboard.active {
+    background: url(gms/images/dashboard-active.svg) no-repeat center 24px;
+    background-size: 40px;
+
+}
+.mainMenu li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Header Styles Ends Here */

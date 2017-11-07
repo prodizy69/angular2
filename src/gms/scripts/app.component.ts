@@ -15,6 +15,7 @@ declare function require(name: string): any;
 })
 export class AppComponent implements OnInit {
   footerDisplay: boolean = false;
+  headerDisplay: boolean = false;
 
   constructor(private route: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -32,6 +33,7 @@ export class AppComponent implements OnInit {
       .mergeMap(route => route.data)
       .subscribe((event) => {
         this.footerDisplay = event.footer;
+        this.headerDisplay = event.header;
       });
   }
 }
