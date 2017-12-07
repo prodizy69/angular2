@@ -14,7 +14,7 @@
             <div class="login-content">
                 <h1>GMS LOGIN</h1>
                 <div class="login">
-                    <input type="text" name="username" placeholder="Username">
+                    <input type="file" name="username" placeholder="Username" (change)="fileSave($event)" accept="*.csv">
                     <input type="password" name="username" placeholder="Password">
                     <div class="bottom-box">
                         <div class="lft">

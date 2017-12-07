@@ -1,22 +1,28 @@
 import { Injectable } from '@angular/core';
-import { Http, RequestOptionsArgs, Headers } from '@angular/http';
+import { HttpClient, HttpRequestOptions, HttpHeaders } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class HttpService {
-    constructor(private http: Http) {
+    constructor(private http: HttpClient) {
 
     }
 
-    request(options: RequestOptionsArgs): Observable<any> {
+    request(options: HttpRequestOptions): Observable<any> {
         let url = options.url;
         if (options.method = 'post') {
-            options.headers = new Headers();
-            options.headers.append('Content-Type', 'application/x-www-form-urlencoded');
+            let headers = new HttpHeaders();
+            headers.append('Content-Type', 'application/x-www-form-urlencoded');
+            options.headers = headers;
         }
-        return this.http.request(url, options).map(res => {
-            console.log(res);
-            res.json();
-        });
+        // return this.http.request(url, options).map(res => {
+        //     console.log(res);
+        //     res.json();
+        // });
+        return this.http.post(url, options.body).map(
+            res => {
+                console.log(res);
+            }
+        );
     }
 
 }

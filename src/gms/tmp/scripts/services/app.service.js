@@ -23,9 +23,10 @@ var AppService = (function () {
     };
     AppService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.HttpClient !== 'undefined' && http_1.HttpClient) === 'function' && _a) || Object])
     ], AppService);
     return AppService;
+    var _a;
 }());
 exports.AppService = AppService;
 
