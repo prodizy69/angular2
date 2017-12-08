@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+var http_1 = require('@angular/common/http');
 var AppService = (function () {
     function AppService(http) {
         this.http = http;
@@ -17,16 +17,15 @@ var AppService = (function () {
     AppService.prototype.getServerUril = function () {
         var _this = this;
         this.http.get('gms/config/configurations.json').map(function (res) {
-            _this.serverUrl = res.json().url;
+            _this.serverUrl = res['url'];
             return _this.serverUrl;
         });
     };
     AppService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.HttpClient !== 'undefined' && http_1.HttpClient) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [http_1.HttpClient])
     ], AppService);
     return AppService;
-    var _a;
 }());
 exports.AppService = AppService;
 

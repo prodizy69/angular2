@@ -22,6 +22,7 @@
             '@angular'                                      : 'node_modules/@angular',
             'rxjs'                                          : 'node_modules/rxjs',
             '@angular/common'                               : 'node_modules/@angular/common/bundles/common.umd.js',
+            '@angular/common/http'                          : 'node_modules/@angular/common/bundles/common-http.umd.js',
             '@angular/common/testing'                       : 'node_modules/@angular/common/bundles/common-testing.umd.js',
             '@angular/compiler'                             : 'node_modules/@angular/compiler/bundles/compiler.umd.js',
             '@angular/compiler/testing'                     : 'node_modules/@angular/compiler/bundles/compiler-testing.umd.js',
@@ -42,7 +43,6 @@
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
             'src/gms/'                                      : { defaultExtension: 'js', defaultJSExtensions: true },
-           
             // thirdparty barrels
             'rxjs'                                          : { defaultExtension: 'js', defaultJSExtensions: true },
             'lodash'                                        : { main: 'index.js', defaultExtension: 'js' }

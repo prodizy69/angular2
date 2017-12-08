@@ -8,12 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var http_1 = require('@angular/common/http');
 var interceptor_1 = require('./services/interceptor');
 var login_component_1 = require('./login-component/login-component');
 var http_service_1 = require('./services/http-service');
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-// import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 var mdl_directive_1 = require('./directives/mdl-directive');
 var app_service_1 = require('./services/app.service');
 var app_routes_1 = require('./app.routes');
@@ -21,7 +21,6 @@ var footer_component_1 = require('./footer-component/footer-component');
 var header_component_1 = require('./header-component/header-component');
 var profile_component_1 = require('./profile-component/profile-component');
 var home_component_1 = require('./home-component/home-component');
-var http_1 = require('@angular/http');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
