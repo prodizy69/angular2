@@ -7,10 +7,10 @@ import 'rxjs/add/operator/mergeMap';
 declare function require(name: string): any;
 
 @Component({
-  selector: 'gms-app',
-  templateUrl: 'gms/scripts/app.component.html',
+  selector: 'tutorial-app',
+  templateUrl: 'scripts/app.component.html',
   styleUrls: [
-    'gms/scripts/app.component.css'
+    'scripts/app.component.css'
   ]
 })
 export class AppComponent implements OnInit {

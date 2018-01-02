@@ -12,8 +12,7 @@
 
         // paths
         paths: {
-            'gms/*': 'src/gms/tmp/*',
-            'gms/test/*': 'src/gms/tmp/test/*'
+            'scripts/*': 'src/tmp/scripts/*'
         },
 
         // map tells the System loader where to look for things
@@ -42,9 +41,11 @@
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
-            'src/gms/'                                      : { defaultExtension: 'js', defaultJSExtensions: true },
+            // 'scripts'                                       : { defaultExtension: 'js' },
+            // 'src'                                           : { defaultExtension: 'js' },
+            'src/tmp/scripts'                                           : { defaultExtension: 'js' },
             // thirdparty barrels
-            'rxjs'                                          : { defaultExtension: 'js', defaultJSExtensions: true },
+            'rxjs'                                          : { defaultExtension: 'js' },
             'lodash'                                        : { main: 'index.js', defaultExtension: 'js' }
         },
         meta: {
@@ -61,7 +62,6 @@
     // filterSystemConfig - index.html's chance to modify config before we register it.
     if (global.filterSystemConfig) { global.filterSystemConfig(config); }
 
-    System.defaultJSExtensions = true;
     System.config(config);
 
 })(this);

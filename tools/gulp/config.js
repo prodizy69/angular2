@@ -1,43 +1,40 @@
 var envConfig = require('./utils/env');
 
-var appName = 'gms';
+var srcName = '';
 
 module.exports = function () {
-  var root = '',
-      src = root + 'src/',
-      tools = root + 'tools/',
-      app = src + appName + '/',
-      test = app + 'test/',
-      tmp = app + 'tmp/',
+  var src = 'src/',
+      tools =  'tools/',
+      test = src + 'test/',
+      tmp =  src + 'tmp/',
       tmpTest = tmp + 'test/',
       testHelper = test + 'test-helpers/',
       e2e = test + 'e2e/',
       tmpE2E = tmpTest + 'e2e/',
       index = src + 'index.html',
-      dest ='dist/gms/'
+      dest ='dist/'
       assets = {
-        config: app + 'config/',
-        images: app + 'images/',
-        fonts: app + 'fonts/',
-        styles: app + 'styles/',
-        scripts: app + 'scripts/'
+        config: src + 'config/',
+        images: src + 'images/',
+        fonts: src + 'fonts/',
+        styles: src + 'styles/',
+        scripts: src + 'scripts/'
       },
       tsFiles = [
-           app + '**/*.ts'
+           src + '**/*.ts'
       ],
       tsTestFiles = {
-          unit: [app + '**/*.spec.ts'],
+          unit: [src + '**/*.spec.ts'],
           e2e: [e2e + '**/*.ts'],
           helper: [testHelper + '**/*.ts']
       },
       build = {
           path: dest,
-          app: dest,
-          images: dest+'images/',
-          fonts: dest+'fonts/',
-          styles: dest+'styles/',
-          config: dest+'config/',
-          scripts: dest+'scripts/'
+          images: dest + 'images/',
+          fonts: dest + 'fonts/',
+          styles: dest + 'styles/',
+          config: dest + 'config/',
+          scripts: dest + 'scripts/'
       },
       systemJSConfig = src + 'systemjs.config.js',
       report = {
@@ -64,8 +61,8 @@ module.exports = function () {
   var gulpConfig = {
       src: src,
       root: root,
-      appName: appName,
-      app: app,
+      srcName: srcName,
+      src: src,
       assets: assets,
       test: test,
       tmp: tmp,
@@ -98,12 +95,12 @@ module.exports = function () {
                   }
               },
               files: [
-                  app + 'index.html',
-                  app + 'systemjs.conf.js',
-                  app + 'styles/' + 'app.css',
+                  src + 'index.html',
+                  src + 'systemjs.config.js',
+                  src + 'styles/' + 'src.css',
                   tmp + '**/*.js',
-                  app + '**/*.css',
-                  app + '**/*.html'
+                  src + '**/*.css',
+                  src + '**/*.html'
               ]
           },
           prod: {

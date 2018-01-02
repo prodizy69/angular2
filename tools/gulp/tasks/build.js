@@ -98,8 +98,8 @@ gulp.task('build-assets', function (done) {
     gulp.src(config.assets.config + '**/*.json', { base: config.assets.config })
         .pipe(gulp.dest(config.build.config));
     
-    gulp.src([config.app + '**/*.html', config.app + '**/*.css'], { base: config.app })
-        .pipe(gulp.dest(config.build.app));
+    gulp.src([config.src + '**/*.html', config.src + '**/*.css'], { base: config.src })
+        .pipe(gulp.dest(config.build.path));
 
     gulp.src(config.src + 'favicon.ico')
         .pipe(gulp.dest(config.build.path));
@@ -123,7 +123,7 @@ gulp.task('index', function(done) {
                       ])
                       .pipe(concat('lib.bundle.js'))
                       .pipe(gulp.dest(config.build.scripts))
-                      // .pipe(uglify())
+                      .pipe(uglify())
                       .pipe(rev())
                       .pipe(gulp.dest(config.build.scripts));
   var appStream = gulp.src([
@@ -132,12 +132,14 @@ gulp.task('index', function(done) {
                         return config.tmp + 'scripts/' + jsFilePath;
                       })))
                       .pipe(concat('app.bundle.js'))
-                      // .pipe(uglify())
+                      .pipe(uglify())
                       .pipe(rev())
                       .pipe(gulp.dest(config.build.scripts));
+  console.log('index', config.index);
   gulp.src(config.index)
       .pipe(inject(libStream, { name: 'lib', ignorePath: 'dist', addRootSlash: false }))
       .pipe(inject(appStream, { name: 'app', ignorePath: 'dist', addRootSlash: false}))
+      .pipe(rev())
       .pipe(revReplace())
       .pipe(gulp.dest(config.build.path))
       .on('finish', done);

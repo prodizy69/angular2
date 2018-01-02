@@ -13,7 +13,7 @@ color = colorMap[envConfig.ENV] || 'bgMagenta';
 var Dashboard = {};
 
 Dashboard.show = function() {
-	console.log('============== Building GMS Module ==============');
+	console.log('============== Building tutorial Module ==============');
   console.log('Current environment: ' + util.colors[color](envConfig.ENV));
   console.log('===========================================');
 };

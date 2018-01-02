@@ -9,7 +9,7 @@ export class AppService {
     }
 
     getServerUril() {
-        this.http.get('gms/config/configurations.json').map(res => {
+        this.http.get('config/configurations.json').map(res => {
             this.serverUrl = res['url'];
             return this.serverUrl;
         });

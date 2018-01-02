@@ -8,10 +8,10 @@ var autoprefixer = require('gulp-autoprefixer');
 var config 	= require('../config')();
 // var scssInput = '../../styles/*.scss';
 var scssInput = [
-	'../../../src/gms/styles/app.scss',
-  '../../../src/gms/scss/xxx.scss'
+	'../../../src/tutorial/styles/app.scss',
+  '../../../src/tutorial/scss/xxx.scss'
 	];
-var scssOutput = '../../../src/gms/styles'; 
+var scssOutput = '../../../src/tutorial/styles'; 
 
 gulp.task('sass', function () {
   
