@@ -1,4 +1,7 @@
 <input type="file" name="username" placeholder="Username" (change)="fileSave($event)" accept="*.csv">
 <div class="rgt">
     <input type="submit" class="loginbtn" value="Login" (click)="login()">
+    <date-picker [config]="dateConfig" [(ngModel)]="dateVal"></date-picker>
+    <date-picker [config]="dateConfig" [(ngModel)]="dateValue"></date-picker>
+    <a type="button" routerLink='test' routerLinkActive="active">Next</a>
 </div>

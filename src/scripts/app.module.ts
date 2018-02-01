@@ -16,18 +16,23 @@ import { HomeComponent } from './home-component/home-component';
 import { AppRoutingModule } from './app.routes';
 
 import { AppComponent } from './app.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
+import { TestModule } from './test/test.module';
 
 @NgModule({
     imports: [BrowserModule,
         AppRoutingModule, FormsModule, ReactiveFormsModule,
-        HttpClientModule, CommonModule],
+        HttpClientModule, CommonModule, TestModule],
     declarations: [AppComponent,
         HomeComponent,
         ProfileComponent,
         HeaderComponent,
         FooterComponent,
-        LoginComponent
-    ],
+        LoginComponent,
+        DatePickerComponent
+,
+    DatePickerComponent
+],
     bootstrap: [AppComponent],
     providers: [AppService, HttpService, { provide: LocationStrategy, useClass: HashLocationStrategy }]
 })

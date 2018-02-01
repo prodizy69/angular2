@@ -8,7 +8,21 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
     file: File;
-    constructor(private route: Router, private service: HttpService) { }
+    dateConfig: any;
+    dateVal: any;
+    dateValue: any;
+    constructor(private route: Router, private service: HttpService) {
+        this.dateValue = new Date().toISOString();
+        this.dateConfig = {
+            enableTime: true,
+            onChange: (event) => {
+                if (event && event.length) {
+                    this.dateVal = <Date>event[0].toISOString();
+                    console.log(event);
+                }
+            }
+        };
+    }
 
     login() {
         this.route.navigate(['home']);

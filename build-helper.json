@@ -2,6 +2,10 @@
   "features": [{
     "inputFile": "app.module.js",
     "outputFile": "app.component.js"
+  },
+  {
+    "inputFile": "test.module.js",
+    "outputFile": "test.component.js"
   }],
   "jsExtras": [
     "feature-modules.js"
